@@ -62,7 +62,7 @@ def n_fold_validation(dataset,labelset,n_fold,i):
 
 def test_acc(dataset,labelset,distance_method,k,n_fold=10):
     accs = []
-    for i in range(10):
+    for i in range(n_fold):
         (train_data, test_data,
          train_label, test_label) = n_fold_validation(dataset, labelset, n_fold, i)
         results = []

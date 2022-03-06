@@ -9,9 +9,9 @@ normalize(dataset)
 type_dic=conv_string_map_integer(labelset)
 # process data
 
-acc_1=test_acc(dataset,labelset,euclidean_distance,10)
-acc_2=test_acc(dataset,labelset,euclidean_distance,15)
-acc_3=test_acc(dataset,labelset,euclidean_distance,20)
+acc_1=test_acc(dataset,labelset,euclidean_distance,10,20)
+acc_2=test_acc(dataset,labelset,euclidean_distance,15,20)
+acc_3=test_acc(dataset,labelset,euclidean_distance,20,20)
 
 
 
